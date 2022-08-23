@@ -10,6 +10,9 @@
     $: output = createOutput(text, result, pattern);
 
     function createRegex(pattern) {
+        // Regular expression that doesn't match anything.
+        if (!pattern) return /^$/;
+
         let regex = "";
         try {
             regex = new RegExp(pattern, "g");
