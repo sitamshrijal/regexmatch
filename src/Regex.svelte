@@ -50,10 +50,9 @@
     <div class="badge">{result?.length || 0} matches</div>
 
     <textarea
-        type="text"
         placeholder="Text"
         bind:value={text}
-        class="input input-bordered h-36"
+        class="textarea textarea-bordered h-36"
     />
 
     <div class="rounded-lg border border-primary p-4">
